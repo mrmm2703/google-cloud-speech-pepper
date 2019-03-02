@@ -37,9 +37,9 @@ audio.terminate()
 
 
 
-file = open("/home/muhammad/recordings/newfile.raw", "w")
-file.write(b''.join(frames))
-file.close()
+SpeechFile = open("/home/muhammad/recordings/newfile.raw", "w")
+SpeechFile.write(b''.join(frames))
+SpeechFile.close()
 
 # Instantiates a client
 client = speech.SpeechClient()
